@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:state_management_with_riverpod/views/future_provider_view.dart';
 import 'package:state_management_with_riverpod/views/state_notifier_view.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const StateNotifierView(),
+      home: const FutureProviderView(),
     );
   }
 }

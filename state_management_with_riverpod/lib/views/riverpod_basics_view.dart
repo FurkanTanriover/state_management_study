@@ -22,7 +22,6 @@ class RiverpodBasicsView extends StatelessWidget {
             SizedBox(height: 250),
             MyText(),
             MyCounterText(),
-            CiftMiText(),
           ],
         ),
       ),
@@ -54,19 +53,6 @@ class MyCounterText extends ConsumerWidget {
     return Text(
       sayac.toString(),
       style: Theme.of(context).textTheme.headline4,
-    );
-  }
-}
-
-class CiftMiText extends ConsumerWidget {
-  const CiftMiText({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    var ciftMi = ref.watch(ciftMiProvider);
-    return Text(
-      ciftMi ? "Çift" : "Tek",
-      style: const TextStyle(color: Colors.black),
     );
   }
 }
