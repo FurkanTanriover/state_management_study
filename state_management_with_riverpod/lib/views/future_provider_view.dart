@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management_with_riverpod/all_providers.dart';
-import 'package:state_management_with_riverpod/model/bina_model.dart';
+
 
 class FutureProviderView extends ConsumerWidget {
   const FutureProviderView({Key? key}) : super(key: key);
